@@ -1,0 +1,16 @@
+name: Node.js CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci --no-audit
+      - run: npm run prebuild --if-present
+      - run: npm run build:release --if-present
+      # - run: npm run test --if-present
+        env:
+          CI: true

@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "nodenext",
+    "lib": [
+      "ES2022",
+      "dom",
+      "dom.iterable"
+    ],
+    "moduleResolution": "nodenext",
+    "rootDir": ".",
+    "outDir": "lib",
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "alwaysStrict": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "cheerio": [
+        "./node_modules/cheerio/lib/index.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "__tests__/**/*",
+    "cli/**/*",
+    "bin/*"
+  ]
+}
